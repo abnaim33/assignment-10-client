@@ -1,0 +1,45 @@
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 150px;
+}
+
+.header a {
+    color: #444242;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 36px;
+}
+
+.header a:hover {
+    color: rgb(212, 57, 1)
+}
+
+.login-btn {
+    background: orangered;
+    color: white !important;
+    padding: .2rem 1.5rem;
+}
+
+.login-btn:hover {
+    background: rgb(204, 56, 2);
+}
+
+.cart-item-length {
+    position: relative;
+    bottom: 1rem;
+    background: rgb(255, 22, 22);
+    border-radius: 7rem;
+    height: 2rem;
+    padding: .6rem;
+    color: white
+}

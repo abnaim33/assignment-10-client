@@ -1,0 +1,30 @@
+.products {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.products div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lightgray;
+    margin: 1rem auto;
+    padding: .5rem;
+}
+
+.products button {
+    width: 100px;
+    padding: .5rem 1rem;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .products div {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
