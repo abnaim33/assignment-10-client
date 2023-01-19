@@ -52,7 +52,7 @@ const Cart = ({ cart, user }) => {
                     "Content-Type": "application/json",
                 }
             }
-            const { data } = await axios.post("/api/order/new", order, config);
+            const { data } = await axios.post("https://assignment-10-server-tawny.vercel.app/api/order/new", order, config);
 
             setSuccess(true)
             if (data.success === true) {

@@ -18,7 +18,7 @@ const CreateProduct = () => {
 
         const { name, price, description, imageUrl } = product
         const { data } = await axios.post(
-            `/api/admin/product/new`,
+            `https://assignment-10-server-tawny.vercel.app/api/admin/product/new`,
             { name, price, description, imageUrl },
             config
         );

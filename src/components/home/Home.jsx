@@ -5,13 +5,13 @@ import Product from '../Product/Product';
 
 import './Home.css'
 
-const Home = ({ handleAddToCart, user }) => {
+const Home = ({ handleAddToCart }) => {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         async function fetchProducts() {
-            await axios.get("/api/products")
+            await axios.get("https://assignment-10-server-tawny.vercel.app/api/products")
                 .then(res => setProducts(res.data.products))
 
         }
