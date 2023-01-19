@@ -16,7 +16,7 @@ import Orders from './components/orders/Orders';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Products from './components/Products.jsx/Products';
+import Products from './components/products/Products';
 
 function App() {
 
@@ -28,15 +28,12 @@ function App() {
 
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/firebase.User
-        // const uid = user.uid;
+
         setUser(user)
 
-        // ...
+
       } else {
-        // User is signed out
-        // ...
+
       }
     });
   }, [user])
@@ -58,7 +55,7 @@ function App() {
     }
 
     setCart(newCart);
-    // addToDb(selectedProduct.id);
+
   }
 
 
@@ -74,7 +71,6 @@ function App() {
           <Route path="/cart" element={<Cart cart={cart} user={user} />} />
           <Route path="/products" element={<Products />} />
           <Route path="/orders" element={<Orders user={user} />} />
-          {/* <Route path="/search/:vahicle" element={<Search />} />c */}
           <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
 
           <Route path="create-product" element={<CreateProduct user={user} />} />
@@ -83,7 +79,6 @@ function App() {
 
 
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/signin" element={<SignIn />} /> */}
       </Routes>
     </div>
   );

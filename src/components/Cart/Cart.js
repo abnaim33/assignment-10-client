@@ -14,7 +14,7 @@ const Cart = ({ cart, user }) => {
 
     const [success, setSuccess] = useState(false)
 
-    // console.log(cart);
+
     let total = 0;
     let shipping = 0;
     let totalQuantity = 0;
@@ -53,7 +53,7 @@ const Cart = ({ cart, user }) => {
                 }
             }
             const { data } = await axios.post("/api/order/new", order, config);
-            console.log(data)
+
             setSuccess(true)
             if (data.success === true) {
                 toast("Order placed successfully")

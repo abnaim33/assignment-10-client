@@ -27,6 +27,7 @@ const Orders = ({ user }) => {
 
             <h2> You have {orders.length} Orders</h2>
 
+
             {orders.map(order => (
                 <div key={order._id} style={{
                     display: 'flex', alignItems: 'center',

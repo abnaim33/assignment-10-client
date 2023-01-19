@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 const Products = () => {
 
     const [products, setProducts] = useState([]);
-    // const [cart, setCart] = useState([]);
 
     useEffect(() => {
         async function fetchProducts() {
@@ -21,7 +20,7 @@ const Products = () => {
     }, []);
 
     const handleDeleteProduct = async (id) => {
-        console.log('handle delte clicked')
+
         await axios.delete('/api/admin/product', {
             headers: {
                 id: id
@@ -30,7 +29,7 @@ const Products = () => {
         }).then(res => toast(res.data.message))
 
     }
-    console.log(products)
+
 
     return (
         <div className='products'>

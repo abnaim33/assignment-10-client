@@ -24,7 +24,7 @@ const Profile = ({ user }) => {
     return (
         <div>
             <h2>Your name:{user.displayName}</h2>
-
+            <h3>Your email: {user.email}</h3>
             <button onClick={() => handleSignOut()}
                 style={{ padding: '.5rem', background: 'black', color: 'white', cursor: 'pointer' }}>Sign Out</button>
 

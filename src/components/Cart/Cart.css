@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.product {
+.cart .product {
     width: 300px;
     height: 410px !important;
     border: 1px solid #95A0A7;
@@ -20,23 +20,23 @@
     width: 80%;
 }
 
-.product img {
+.cart .product img {
     width: 286px;
     height: 286px;
     border-radius: 8px;
     margin: 7px;
 }
 
-.product-info {
+.cart .product-info {
     margin: 0 14px;
 }
 
-.product-info p {
+.cart .product-info p {
     margin-bottom: 0;
     margin-top: 5px;
 }
 
-.product-name {
+.cart .product-name {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;

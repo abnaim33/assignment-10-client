@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 import './Header.css';
-// import logo from '../../images/logo.png'
+
 const Header = ({ user, cart }) => {
 
 
@@ -12,8 +11,8 @@ const Header = ({ user, cart }) => {
 
     return (
         <nav className='header'>
-            <h1>hello world</h1>
-            {/* <img src={logo} alt="" className='logo' /> */}
+            <h1>Style's Zone</h1>
+
             <div>
                 <Link to="/">Home</Link>
 
@@ -40,12 +39,7 @@ const Header = ({ user, cart }) => {
 
 
                 <Link to="/orders">Orders</Link>
-                {/* <Link to="/cart">cart
 
-                    <span className='cart-item-length'>
-                        {cart.length}
-                    </span>
-                </Link> */}
                 {
                     user.displayName ? <Link to="/profile" >{user.displayName}</Link> :
 

@@ -1,6 +1,6 @@
 .product {
     width: 300px !important;
-    height: 510px !important;
+    height: 350px !important;
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
@@ -34,7 +34,7 @@
     margin-top: 7px;
 }
 
-.btn-cart {
+.product-btn {
     width: 100%;
     background: lightgray;
     border: none;
@@ -44,12 +44,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.btn-cart .btn-text {
+.product-btn .btn-text {
     margin-right: 5px;
 }
 
-.btn-cart:hover {
+.product-btn:hover {
     background-color: gray;
 }
